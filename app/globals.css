@@ -1,0 +1,112 @@
+ @import "tailwindcss";
+/*
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* 
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@layer base {
+  html, body {
+    background: #080B10 !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .delay-100 {
+    transition-delay: 0.1s;
+  }
+
+  .delay-200 {
+    transition-delay: 0.2s;
+  }
+
+  .delay-300 {
+    transition-delay: 0.3s;
+  }
+
+  .show-sm {
+    display: none !important;
+  }
+
+  @media (max-width: 900px) {
+    .hide-md {
+      display: none !important;
+    }
+    .show-sm {
+      display: flex !important;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hide-sm {
+      display: none !important;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #080B10;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #00E5FF;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: rgba(0, 229, 255, 0.2);
+    color: #00E5FF;
+  }
+}
+
+/* Keyframes used by inline styles and Tailwind arbitrary animations */
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes scrollBar {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+ 100% { transform: scaleY(0); transform-origin: bottom; }
+}
