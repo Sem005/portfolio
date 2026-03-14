@@ -50,12 +50,6 @@ const SKILLS: Skill[] = [
     desc: 'Déploiement continu, scaling automatique.', 
     tags: ['Docker', 'GitHub Actions',  'VPS / Cloud'] 
   },
-  { 
-    icon: <Rocket size={24} />, 
-    title: 'SaaS & Automation', 
-    desc: 'SaaS complets, extensions Chrome, outils automation.', 
-    tags: ['Extensions Chrome', 'Stripe',] 
-  },
 ];
 
 const PROJECTS: Project[] = [

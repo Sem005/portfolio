@@ -93,7 +93,7 @@ const About: FC = () => {
             </h2>
             <p className="text-[#8B9BAD] mb-5 leading-[1.8]">
               Je suis Semiou Yessoufou, développeur Full-Stack passionné avec
-              plus de 4 ans d'expérience dans la création d'applications web,
+              plus de 3 ans d'expérience dans la création d'applications web,
               mobiles et de SaaS performants. De la maquette au déploiement, je
               pilote chaque projet avec rigueur et transparence.
             </p>
